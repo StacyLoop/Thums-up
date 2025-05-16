@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'SVN-Kimberley';
-  src: url('/SVN-Kimberley.ttf') format('truetype'); 
+  src: url('SVN-Kimberley.ttf') format('truetype'); 
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 }
 
 .background {
-  background-image: url('/background.jpg');
+  background-image: url('background.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
