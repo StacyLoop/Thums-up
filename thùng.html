@@ -1,0 +1,393 @@
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>
+     Mall - Thums up
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <style>
+    /* Custom scrollbar for horizontal scroll thumbnails */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-gray-900 bg-white">
+  <!-- Top red bar -->
+  <div class="bg-[#ee4d2d] text-white text-xs px-4 py-1 flex flex-wrap justify-center gap-3 sm:justify-start sm:gap-6">
+    <a class="hover:underline" href="#">
+      Trang chủ 
+    </a>
+    <a class="hover:underline" href="#">
+      Trở thành Người bán 
+    </a>
+    <a class="hover:underline" href="#">
+      Tải ứng dụng
+    </a>
+    <a class="hover:underline flex items-center gap-1" href="#">
+      Kết nối
+      <i class="fab fa-facebook-f">
+      </i>
+      <i class="fab fa-instagram">
+      </i>
+    </a>
+  </div>
+  <!-- Main header red bar -->
+  <header class="bg-[#d70018] flex flex-wrap items-center justify-between px-4 py-3 sm:py-4 sm:px-6">
+    <div class="flex items-center gap-3 flex-shrink-0">
+      <span class="text-white text-xl font-light select-none flex items-center">
+        <img src="logo1.png" alt="Logo" class="w-17 h-10 mr-2" /> <!-- Thêm logo tại đây -->
+       Mall
+      </span>
+    </div>
+    <form aria-label="Tìm trong  Mall" class="flex flex-grow max-w-xl w-full" role="search">
+      <input aria-label="Tìm trong Mall"
+        class="flex-grow rounded-l border border-white bg-white text-gray-900 text-sm px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#ff5722]"
+        placeholder="Tìm trong  Mall" type="search" />
+      <button
+        class="bg-[#ff5722] px-3 flex items-center justify-center rounded-r border border-l-0 border-[#ff5722] hover:bg-[#e64a19]"
+        type="submit">
+        <i class="fas fa-search text-white text-sm">
+        </i>
+      </button>
+    </form>
+    <div class="flex items-center gap-4 text-white text-xs whitespace-nowrap ml-4 flex-shrink-0">
+      <button aria-label="Thông Báo" class="flex items-center gap-1 hover:underline">
+        <i class="fas fa-bell">
+        </i>
+        Thông Báo
+      </button>
+      <button aria-label="Hỗ Trợ" class="flex items-center gap-1 hover:underline">
+        <i class="fas fa-question-circle">
+        </i>
+        Hỗ Trợ
+      </button>
+      <button aria-label="Tiếng Việt" class="flex items-center gap-1 hover:underline">
+        <i class="fas fa-globe">
+        </i>
+        Tiếng Việt
+      </button>
+      <span class="border-l border-white pl-2 cursor-default select-none">
+        Đăng Ký
+      </span>
+      <span class="border-l border-white pl-2 cursor-default select-none">
+        Đăng Nhập
+      </span>
+      <button aria-label="Giỏ hàng" class="ml-2">
+        <i class="fas fa-shopping-cart text-white text-lg">
+        </i>
+      </button>
+    </div>
+  </header>
+  <!-- Breadcrumb -->
+  <nav aria-label="Breadcrumb" class="bg-[#f5f5f5] px-4 py-3 text-sm text-gray-600 select-none">
+    <ol class="list-reset flex flex-wrap gap-1 sm:gap-2">
+      <li>
+        <a class="text-[#2f7be1] hover:underline" href="#">
+          
+        </a>
+      </li>
+      <li>
+        <span class="text-[#2f7be1] hover:underline cursor-pointer">
+          Bách Hóa Online
+        </span>
+      </li>
+      <li>
+        <span class="text-gray-500">
+          nước ngọt
+        </span>
+      </li>
+      <li>
+        <span class="text-gray-400">
+          Thùng nước ngọt Thums up
+        </span>
+      </li>
+    </ol>
+  </nav>
+  <!-- Main content container -->
+  <main class="max-w-7xl mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-12 gap-6">
+    <!-- Left side: product images -->
+    <section class="md:col-span-5">
+      <div class="bg-[#b63f37] p-6 flex justify-center items-center rounded-md">
+        <img alt="Red Thums Up can with lightning logo and text in Vietnamese on a red background"
+          class="max-w-full h-auto object-contain" height="400" id="mainImage" src="box1.jpg" width="300" />
+      </div>
+      <div class="mt-3 flex gap-2 overflow-x-auto scrollbar-hide">
+        <img alt="Purple Thums Up can on purple background"
+          class="w-14 h-14 object-contain rounded-sm cursor-pointer border border-gray-300 hover:border-[#d70018]"
+          height="60" id="thumb1" src="box1.jpg" width="60" />
+        <img alt="Purple Thums Up can on purple background"
+          class="w-14 h-14 object-contain rounded-sm cursor-pointer border border-gray-300 hover:border-[#d70018]"
+          height="60" id="thumb2" src="box2.jpg" width="60" />
+        <img alt="Green Thums Up can on green background"
+          class="w-14 h-14 object-contain rounded-sm cursor-pointer border border-gray-300 hover:border-[#d70018]"
+          height="60" id="thumb3" src="box3.jpg" width="60" />
+
+      </div>
+    </section>
+    <!-- Right side: product details -->
+    <section class="md:col-span-7 space-y-4">
+      <h1 class="text-2xl font-serif flex items-center gap-2">
+        <span class="bg-[#ff5722] text-white text-xs font-bold px-1.5 py-0.5 rounded select-none">
+        Mall
+        </span>
+        Thùng nước ngọt Thums up 24 lon
+      </h1>
+      <div class="flex items-center gap-3 text-sm">
+        <span class="font-semibold text-[#ff5722]">
+          4.9
+        </span>
+        <div class="flex gap-0.5 text-[#ffb800]">
+          <i class="fas fa-star">
+          </i>
+          <i class="fas fa-star">
+          </i>
+          <i class="fas fa-star">
+          </i>
+          <i class="fas fa-star">
+          </i>
+          <i class="fas fa-star">
+          </i>
+        </div>
+        <span class="text-gray-600">
+          16,4k Đánh Giá
+        </span>
+        <span class="ml-auto text-xs text-gray-400 cursor-pointer select-none">
+          Tố cáo
+        </span>
+      </div>
+      <div
+        class="bg-gradient-to-r from-[#ff5722] to-[#ff7a45] text-white text-xs font-semibold flex items-center justify-between px-3 py-1 rounded select-none">
+        <div class="flex items-center gap-1">
+          <i class="fas fa-bolt">
+          </i>
+          FLASH SALE
+        </div>
+        <div class="flex items-center gap-1 font-mono">
+          <i class="far fa-clock">
+          </i>
+          KẾT THÚC TRONG
+          <span class="bg-black rounded px-1">
+            01
+          </span>
+          <span class="bg-black rounded px-1">
+            45
+          </span>
+          <span class="bg-black rounded px-1">
+            39
+          </span>
+        </div>
+      </div>
+      <div class="bg-[#f9f0e9] rounded px-4 py-3 flex items-center gap-4">
+        <span class="text-3xl font-extrabold text-[#d70018]">
+          ₫241.200
+        </span>
+        <span class="line-through text-gray-400 text-lg">
+          ₫360.000
+        </span>
+        <span class="text-[#d70018] font-semibold text-sm">
+          -33%
+        </span>
+      </div>
+      <div class="flex flex-wrap gap-2 text-xs text-[#d70018] font-semibold select-none">
+        <button class="bg-[#ffe3e3] rounded px-2 py-1 hover:bg-[#ffd0d0]">
+          Giảm ₫15k
+        </button>
+        <button class="bg-[#ffe3e3] rounded px-2 py-1 hover:bg-[#ffd0d0]">
+          Giảm ₫10k
+        </button>
+        <button class="bg-[#ffe3e3] rounded px-2 py-1 hover:bg-[#ffd0d0]">
+          Giảm ₫40k
+        </button>
+        <button class="bg-[#ffe3e3] rounded px-2 py-1 hover:bg-[#ffd0d0]">
+          Giảm ₫25k
+        </button>
+        <button class="bg-[#ffe3e3] rounded px-2 py-1 text-gray-400 cursor-not-allowed" disabled="">
+          Giảm
+        </button>
+        <button class="flex items-center gap-1 hover:underline">
+          Xem tất cả
+          <i class="fas fa-chevron-down text-xs">
+          </i>
+        </button>
+      </div>
+      <div class="flex flex-col sm:flex-row sm:items-center gap-3 text-sm text-gray-600 select-none">
+        <div class="w-28">
+          Vận Chuyển
+        </div>
+        <div class="flex items-center gap-1 text-[#2f7be1]">
+          <i class="fas fa-truck">
+          </i>
+          <span>
+            Nhận từ 4 Th05 - 7 Th05, phí giao ₫0
+          </span>
+        </div>
+      </div>
+      <div class="text-xs text-gray-400 pl-28 select-none">
+        Tặng Voucher ₫15.000 nếu đơn giao sau thời gian trên.
+      </div>
+      <div class="flex flex-col sm:flex-row sm:items-center gap-3 text-sm text-gray-600 select-none mt-3">
+        <div class="w-28">
+          An Tâm Mua Sắm Cùng 
+        </div>
+        <div class="flex items-center gap-1 text-[#d70018] cursor-pointer select-none">
+          <i class="fas fa-shield-alt">
+          </i>
+          <span>
+            Xử lý đơn hàng bởi  · Chính hãng 100% · Miễn phí vận chuyển · ...
+          </span>
+          <i class="fas fa-chevron-down text-xs">
+          </i>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 text-sm text-gray-600 select-none mt-6">
+        <div class="flex items-center space-x-4">
+          <p class="text-sm font-medium text-gray-700">Số lượng</p>
+          
+          <div class="flex items-center border border-gray-200 rounded-md select-none text-sm" id="quantity-control">
+            <button id="decrease" aria-label="Giảm số lượng" class="px-3 py-1 text-gray-500 hover:bg-gray-100">
+              −
+            </button>
+            <input id="quantity" class="w-10 text-center border-x border-gray-200 focus:outline-none" type="text" value="1" readonly />
+            <button id="increase" aria-label="Tăng số lượng" class="px-3 py-1 text-gray-500 hover:bg-gray-100">
+              +
+            </button>
+          </div>
+        </div>
+        
+        <script>
+          const quantityInput = document.getElementById('quantity');
+          const increaseBtn = document.getElementById('increase');
+          const decreaseBtn = document.getElementById('decrease');
+        
+          increaseBtn.addEventListener('click', () => {
+            let currentValue = parseInt(quantityInput.value);
+            quantityInput.value = currentValue + 1;
+          });
+        
+          decreaseBtn.addEventListener('click', () => {
+            let currentValue = parseInt(quantityInput.value);
+            if (currentValue > 1) {
+              quantityInput.value = currentValue - 1;
+            }
+          });
+        </script>        
+      </div>
+      <div class="flex flex-wrap gap-4 mt-6">
+        <button
+          class="flex items-center gap-2 border border-[#d70018] text-[#d70018] rounded px-4 py-2 hover:bg-[#d70018] hover:text-white transition duration-200">
+          <i class="fas fa-shopping-cart">
+          </i>
+          Thêm Vào Giỏ Hàng
+          <title>Đặt Hàng</title>
+          <script src="https://cdn.tailwindcss.com"></script>
+        </head>
+        <body class="flex items-center justify-center min-h-screen bg-gray-100">
+        
+          <!-- Nút Mua Ngay -->
+          <button id="buyBtn" class="bg-[#d70018] text-white rounded px-8 py-2 hover:bg-[#a30012] transition duration-200">
+            Mua Ngay
+          </button>
+        
+          <!-- Form Đặt Hàng -->
+          <div id="orderForm" class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div class="bg-white rounded-xl p-8 w-full max-w-md shadow-lg">
+              <h2 class="text-xl font-bold mb-4 text-[#d70018]">Đặt Hàng Ngay</h2>
+              <form id="form">
+                <div class="mb-4">
+                  <label class="block mb-1 font-medium">Họ và tên</label>
+                  <input type="text" class="w-full border rounded p-2" required>
+                </div>
+                <div class="mb-4">
+                  <label class="block mb-1 font-medium">Số điện thoại</label>
+                  <input type="tel" class="w-full border rounded p-2" required>
+                </div>
+                <div class="mb-4">
+                  <label class="block mb-1 font-medium">Địa chỉ</label>
+                  <input type="text" class="w-full border rounded p-2" required>
+                </div>
+                <div class="mb-4">
+                  <label class="block mb-1 font-medium">Ghi chú (tuỳ chọn)</label>
+                  <textarea class="w-full border rounded p-2"></textarea>
+                </div>
+                <div class="flex justify-between">
+                  <button type="submit" class="bg-[#d70018] text-white px-4 py-2 rounded hover:bg-[#a30012]">Đặt Hàng</button>
+                  <button type="button" id="closeForm" class="text-gray-500 hover:text-black">Đóng</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        
+          <script>
+            const buyBtn = document.getElementById("buyBtn");
+            const orderForm = document.getElementById("orderForm");
+            const closeForm = document.getElementById("closeForm");
+        
+            buyBtn.addEventListener("click", () => {
+              orderForm.classList.remove("hidden");
+            });
+        
+            closeForm.addEventListener("click", () => {
+              orderForm.classList.add("hidden");
+            });
+        
+            document.getElementById("form").addEventListener("submit", (e) => {
+              e.preventDefault();
+              alert("Đặt hàng thành công!");
+              orderForm.classList.add("hidden");
+            });
+          </script>
+      </div>
+    </section>
+  </main>
+  <script>
+    const mainImage = document.getElementById('mainImage');
+    const thumbnails = [
+      {
+        id: 'thumb1',
+        src: 'box1.jpg',
+        alt: 'Purple Thums Up can on purple background'
+      },
+      {
+        id: 'thumb2',
+        src: 'box2.jpg',
+        alt: 'Green Thums Up can on green background'
+      },
+      {
+        id: 'thumb3',
+        src: 'box3.jpg',
+        alt: 'Three red Thums Up cans grouped on red background'
+      },
+      ];
+
+    // Add click event listeners to thumbnails
+    thumbnails.forEach((thumb) => {
+      const thumbEl = document.getElementById(thumb.id);
+      thumbEl.addEventListener('click', () => {
+        mainImage.src = thumb.src;
+        mainImage.alt = thumb.alt;
+        // Update border highlight
+        thumbnails.forEach(t => {
+          const el = document.getElementById(t.id);
+          if (t.id === thumb.id) {
+            el.classList.add('border-[#d70018]');
+          } else {
+            el.classList.remove('border-[#d70018]');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

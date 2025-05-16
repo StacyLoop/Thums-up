@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thums Up - Taste The Thunder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container background">
+        <!-- Header -->
+        <header class="p-3 border-bottom">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+
+                    <!-- Logo -->
+                    <div class="d-flex align-items-center">
+                        <img src="logo.png" alt="Logo" style="height: 60px;">
+                    </div>
+
+                    <!-- Social Media Buttons -->
+                    <div class="d-flex gap-2">
+                        <a href="https://www.facebook.com/stacy2401.3s" class="btn btn-sm rounded-circle">
+                            <i class="bi bi-facebook fs-4 custom-blue"></i>
+                        </a>
+                        <a href="https://www.instagram.com/stcy_1243/" class="btn btn-sm rounded-circle">
+                            <i class="bi bi-instagram fs-4 custom-blue"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@stacy4684" class="btn btn-sm rounded-circle">
+                            <i class="bi bi-youtube fs-4 custom-blue"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Nav Menu -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <nav class="nav mt-3">
+                        <a class="nav-link fw-bold border border-1 rounded-5 me-2 border-black fs-5" href="/"onclick="location.reload();">Trang
+                            chủ</a>
+                        <a class="nav-link fw-bold border border-1 rounded-5 me-2 border-black fs-5" href="#">Thương
+                            hiệu</a>
+                        <a class="nav-link fw-bold border border-1 rounded-5 me-2 border-black fs-5" href="#">Tác
+                            động</a>
+
+                        <!-- Dropdown for "Cửa hàng" -->
+                        <div class="nav-item dropdown">
+                            <a class="nav-link fw-bold border border-1 rounded-5 me-2 border-black fs-5 dropdown-toggle"
+                                href="#" id="storeDropdown" role="button" aria-expanded="false">
+                                Cửa hàng
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="storeDropdown">
+                                <li><a class="dropdown-item" href="#huong-dau">Hương dâu</a></li>
+                                <li><a class="dropdown-item" href="#huong-kiwi">Hương kiwi</a></li>
+                                <li><a class="dropdown-item" href="#huong-nho">Hương nho</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="d-flex align-items-center">
+                        <input type="text" class="form-control form-control-sm rounded-5 border border-black fs-5 me-2"
+                            placeholder="Tìm kiếm...">
+                        <a href="#" class="btn btn-lg rounded-circle">
+                            <i class="bi bi-list fs-1 custom-blue"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="text-center my-4">
+            <img src="banner.jpg" alt="Banner quảng cáo" class="img-fluid rounded shadow" style="max-width: 800px;">
+        </section>
+
+        <!-- Phân loại -->
+        <section class="container my-5">
+            <h2 class="text-center mb-5 fw-bold">Phân loại:</h2>
+
+            <div class="row justify-content-center g-4">
+                <!-- Hương Dâu -->
+                <div class="col-12 col-md-5 card-section" id="huong-dau">
+                    <div class="card text-center shadow-sm">
+                        <a href="shopee.html"><img src="dau.jpg" alt="Hương Dâu" class="card-img-top"></a>
+                    </div>
+                </div>
+
+                <!-- Hương Kiwi -->
+                <div class="col-12 col-md-5" id="huong-kiwi">
+                    <div class="card text-center shadow-sm">
+                        <a href="shopee.html"><img src="kiwi.jpg" alt="Hương Kiwi" class="card-img-top"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center g-4 mt-3">
+                <!-- Hương Nho -->
+                <div class="col-12 col-md-5" id="huong-nho">
+                    <div class="card text-center shadow-sm">
+                        <a href="shopee.html"><img src="nho.jpg" alt="Hương Nho" class="card-img-top"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="text-center fs-4">Sạc năng lượng - bùng nổ đam mê</h1>
+        <h2 class="text-center fs-5">Thums Up là dòng thức uống có ga với 3 hương vị Kiwi, Dâu Rừng, Nho thơm ngon với
+            hàm lượng caffeine cao giúp tỉnh táo, đồng thời bổ sung vitamin B3 và kẽm giúp hỗ trợ chuyển hóa năng lượng,
+            giảm mệt mỏi.</h2>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row text-center text-md-start"
+                style="border-top: 2px solid #fff; border-bottom: 2px solid #fff;">
+                <div class="col-md-2 mb-2">
+                    <h5>Về chúng tôi</h5>
+                    <p>Our Company<br>Thông Tin<br>Lịch Sử<br>Careers</p>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <h5>Cần trợ giúp?</h5>
+                    <p>Câu Hỏi Thường Gặp<br>Bản đồ trang<br>Thông Tin Liên Hệ</p>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <h5>Pháp lý</h5>
+                    <p>Chính Sách<br>Chính sách về Cookie<br>Điều khoản & Điều kiện<br>Thiết Lập Cookie</p>
+                </div>
+                <div class="col-md-6 mb-6 d-flex align-items-center justify-content-center">
+                    <img src="logo.png" alt="Thums Up Footer Logo" class="img-fluid" style="max-width: 300px;">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
